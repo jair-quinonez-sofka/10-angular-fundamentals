@@ -1,0 +1,77 @@
+@switch (sectionType()) { @case ("title") {
+<section class="container__title__section">
+  <app-title-section
+    svgIcon="assets/svg/wallet.svg"
+    iconTitle="Wallet"
+    mainTitle="The future is
+    multi-chain"
+    subTitle="Manage your crypto easily and safely across multiple networks."
+    [isFullWidth]="isFullWidth()"
+  >
+  </app-title-section>
+</section>
+} @case ("cardImage") {
+<section class="container__content">
+  @if (direction()=="left") {
+  <app-image-container
+    class="container__content__image"
+    backgroundTexture="assets/images/screen-texture.webp"
+    walletImage="assets/images/Wallet_01.webp"
+    coinsPinkImage="assets/images/01.webp"
+    ethereumCoinImage="assets/images/02.webp"
+  >
+  </app-image-container>
+
+  <app-container-details
+    class="container__content__text"
+    titleImage="assets/images/01-plane.webp"
+    containterTitle="Send, swap and bridge crypto"
+    containerDescription="All the features you have come to expect from your favorite crypto
+              wallet."
+  ></app-container-details>
+
+  } @else{
+  <app-container-details
+    class="container__content__text"
+  ></app-container-details>
+
+  <app-image-container
+    class="container__content__image"
+    backgroundTexture="assets/images/screen-texture.webp"
+    walletImage="assets/images/Wallet_01.webp"
+    coinsPinkImage="assets/images/01.webp"
+    ethereumCoinImage="assets/images/02.webp"
+  >
+  </app-image-container>
+
+  }
+</section>
+} @case ("fullVideo") {
+<section>
+  <app-video-complete> </app-video-complete>
+</section>
+} @case ("partialVideo") {
+<section style="background-color: #09101c">
+  <app-partial-video></app-partial-video>
+</section>
+} @case ("fullWidthImage") {
+
+<section class="container__content">
+  <app-image-container
+    [isFullWidth]="true"
+    [contenType]="1"
+  >
+  </app-image-container>
+  <app-image-container
+    [isFullWidth]="true"
+    [contenType]="2"
+
+  >
+  </app-image-container>
+
+  
+
+</section>
+} @default {
+<p>Error: Section type no reconocido.</p>
+} }

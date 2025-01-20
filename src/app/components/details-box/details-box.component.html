@@ -1,0 +1,11 @@
+<div class="payment__details">
+    <p class="title">{{title()}}</p>
+    <p class="details">
+        {{description()}}
+    </p>
+    @if (imageIcon()) {
+    <div class="icons">
+        <img [src]="imageIcon()" alt="Payment incons" height="32" width="216" />
+    </div>
+    }
+  </div>

@@ -1,0 +1,33 @@
+@if (isFullWidth()) { @if (contenType() == 1) {
+<div class="container__content__image--white--up">
+    <img src="/assets/images/Communities_01.webp" alt="Communities 1" width="367" height="794"
+        class="image__comunities" />
+    <img src="/assets/images/Communities_sub_01.webp" alt="Logo Communities 2" width="234" height="31"
+        class="float__image top-right" />
+    <img src="/assets/images/Communities_sub_02.webp" alt="Logo Communities 3" width="192" height="52"
+        class="float__image midddle-right" />
+    <img src="/assets/images/Communities_sub_03.webp" alt="Logo Communities 4" width="137" height="92"
+        class="float__image bottom-left" />
+    <img src="/assets/images/Communities_sub_04.webp" alt="Logo Communities 5" width="146" height="37"
+        class="float__image bottom--middle-right" />
+</div>
+} @else {
+<div class="container__content__image--white">
+    <img src="/assets/images/Communities_02.webp" alt="Communities 2" width="367" height="794"
+        class="image__comunities" />
+    <img src="/assets/images/Communities_sub_05.webp" alt="Logo Communities 5" width="116" height="96"
+        class="float__image bottom-right" />
+</div>
+} } @else {
+<div>
+    <img [src]="backgroundTexture()" alt="Background texture" width="528" height="894" class="image__container" />
+    <img [src]="walletImage()" alt="Wallet Example" width="326" height="707" class="image__wallet" />
+
+    @if (coinsPinkImage()) {
+    <img [src]="coinsPinkImage()" alt="Coins Pink" width="90" height="109" class="corner__image top-left" />
+
+    } @if (ethereumCoinImage()) {
+    <img [src]="ethereumCoinImage()" alt="Ethereun coin" width="90" height="109" class="corner__image bottom-right" />
+    }
+</div>
+}

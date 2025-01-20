@@ -1,0 +1,20 @@
+.payment__details {
+    border: dashed 1px #d1d4d8;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+  
+    & .title{
+  
+      font-size: 19px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  
+    & .details{
+  
+      font-size: 19px;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    
+  }
