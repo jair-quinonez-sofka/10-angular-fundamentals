@@ -15,4 +15,8 @@ export class TitleSectionComponent {
 
   public isFullWidth = input<boolean>();
 
+  public borderColor = input<string>();
+  public iconColor = input<string>();
+
+
 }

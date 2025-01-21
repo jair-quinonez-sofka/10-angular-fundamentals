@@ -1,0 +1,75 @@
+<main>
+  <app-hero-section></app-hero-section>
+  <app-title-section
+    svgIcon="assets/svg/wallet.svg"
+    iconTitle="Wallet"
+    mainTitle="The future is
+    multi-chain"
+    subTitle="Manage your crypto easily and safely across multiple networks."
+    [isFullWidth]="false"
+  >
+  </app-title-section>
+  <app-card-image-section
+    direction="left"
+    imageSource="/assets/images/Wallet_01.webp"
+    floatSource="/assets/images/01.webp"
+  floatSorceTwo="/assets/images/02.webp"
+  >
+  </app-card-image-section>
+
+  <app-card-image-section
+  direction="right"
+  imageSource="/assets/images/Wallet_02.webp"
+  floatSource="/assets/images/03.webp"
+  floatSorceTwo="/assets/images/04.webp"
+>
+</app-card-image-section>
+  <app-video-complete> </app-video-complete>
+
+  <app-title-section
+    svgIcon="assets/svg/messenger.svg"
+    iconTitle="Messenger"
+    mainTitle="Chat privately
+  with friends"
+    subTitle="Protect your right to free speech with decentralised messaging, metadata
+  privacy and end-to-end encryption."
+    [isFullWidth]="false"
+    borderColor="#7140fd"
+    iconColor="#7140fd"
+  >
+  </app-title-section>
+
+  <app-card-image-section
+    direction="left"
+    backgroundColor="#f1ecff"
+    imageSource="/assets/images/Messenger_01.webp"
+  >
+  </app-card-image-section>
+
+  <app-card-image-section
+    direction="right"
+    backgroundColor="#f1ecff"
+    imageSource="/assets/images/Messenger_02.webp"
+  >
+  </app-card-image-section>
+
+  <app-partial-video></app-partial-video>
+  <app-title-section
+    svgIcon="assets/svg/wallet.svg"
+    iconTitle="Wallet"
+    mainTitle="The future is
+    multi-chain"
+    subTitle="Manage your crypto easily and safely across multiple networks."
+    [isFullWidth]="true"
+  >
+  </app-title-section>
+  <app-full-width-image></app-full-width-image>
+  <app-title-section mainTitle="Built different" [isFullWidth]="false">
+  </app-title-section>
+  <app-buildt-cards-section [cards]="cards"></app-buildt-cards-section>
+  <app-video-complete
+    [isHalf]="true"
+    (clickLearnMore)="handleClickLearn($event)"
+  >
+  </app-video-complete>
+</main>

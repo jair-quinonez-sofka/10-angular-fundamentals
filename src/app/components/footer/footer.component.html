@@ -1,0 +1,11 @@
+<footer class="footer">
+  <div class="footer__container">
+    <app-footer-logo />
+    <div class="footer__columns">
+      @for (column of footerColumns; track $index) {
+      <app-footer-colum [title]="column.title" [links]="column.links" [isFirst]="$index === 0" />
+      }
+    </div>
+  </div>
+  <app-footer-bottom [links]="footerBottomLinks" />
+</footer>

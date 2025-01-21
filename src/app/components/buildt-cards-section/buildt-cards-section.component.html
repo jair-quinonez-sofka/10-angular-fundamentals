@@ -1,0 +1,9 @@
+<section class="container__content__built">
+    @for (item of cards(); track $index) {
+    <app-built-card
+      [title]="item.title"
+      [subtitle]="item.subtitle"
+      [image]="item.image"
+    ></app-built-card>
+    }
+  </section>

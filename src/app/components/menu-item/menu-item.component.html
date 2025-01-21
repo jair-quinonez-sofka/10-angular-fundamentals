@@ -1,0 +1,18 @@
+<li class="menu__item" aria-level="1">
+  @if(isHome()){
+  <a class="" href="#" aria-label="Go Home" aria-level="1">
+    <i aria-hidden="true">
+      <img [src]="icon()" alt="Go Home" width="32" height="32" />
+      <img src="/assets/svg/statuslogo.svg" alt="" />
+    </i>
+  </a>
+  } @else{
+  <button 
+  (mouseenter)="toggleSubmenu()"
+  (mouseleave)="closeSubmenu()">
+    <span>{{ label() }}</span>
+  </button>
+  @if(subitems() && isOpen){
+  <app-sub-menu [subitems]="subitems()"></app-sub-menu>
+  } }
+</li>

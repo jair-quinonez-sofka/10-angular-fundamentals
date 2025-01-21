@@ -1,0 +1,11 @@
+<div class="footer__bottom">
+    <p>© Status Research & Development GmbH</p>
+    @if(links()){
+      <ul>
+          @for (link of links(); track $index) {
+              <li><a href="{{link.href}}">{{link.label}}</a></li>
+          }
+  
+      </ul>
+    }
+  </div>

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './components/header/header.component';
-import { ImageContainerComponent } from './components/image-container/image-container.component';
-import { SectionContainerComponent } from './components/section-container/section-container.component';
+import { MainComponent } from './components/main/main.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from "./components/header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [SectionContainerComponent],
+  imports: [MainComponent, FooterComponent, HeaderComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

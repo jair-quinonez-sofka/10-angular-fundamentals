@@ -1,0 +1,42 @@
+<section class="container__content">
+    @if (direction()=="left") {
+    <app-image-container
+      class="container__content__image"
+      backgroundTexture="assets/images/screen-texture.webp"
+      [walletImage]="imageSource()"
+      [coinsPinkImage]="floatSource()"
+      [ethereumCoinImage]="floatSorceTwo()"
+      [backgroundColor]="backgroundColor()"
+    >
+    </app-image-container>
+  
+    <app-container-details
+      class="container__content__text"
+      titleImage="assets/images/01-plane.webp"
+      containterTitle="Send, swap and bridge crypto"
+      containerDescription="All the features you have come to expect from your favorite crypto
+                wallet."
+    ></app-container-details>
+  
+    } @else{
+    <app-container-details
+      class="container__content__text"
+      titleImage="assets/images/01-box.webp"
+      containterTitle="Multi-chain support"
+      containerDescription="See all your assets and NFTs in one place, even if spread across
+      multiple blockchains.
+                wallet."
+    ></app-container-details>
+  
+    <app-image-container
+      class="container__content__image"
+      backgroundTexture="assets/images/screen-texture.webp"
+      [walletImage]="imageSource()"
+      [coinsPinkImage]="floatSource()"
+      [ethereumCoinImage]="floatSorceTwo()"
+      [backgroundColor]="backgroundColor()"
+    >
+    </app-image-container>
+  
+    }
+  </section>

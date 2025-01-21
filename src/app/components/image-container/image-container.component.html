@@ -19,8 +19,8 @@
         class="float__image bottom-right" />
 </div>
 } } @else {
-<div>
-    <img [src]="backgroundTexture()" alt="Background texture" width="528" height="894" class="image__container" />
+<div >
+    <img [src]="backgroundTexture()" alt="Background texture" width="528" height="894" class="image__container" [style.backgroundColor]="backgroundColor()" />
     <img [src]="walletImage()" alt="Wallet Example" width="326" height="707" class="image__wallet" />
 
     @if (coinsPinkImage()) {

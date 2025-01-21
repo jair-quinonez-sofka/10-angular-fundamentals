@@ -1,0 +1,27 @@
+.container__content {
+    max-width: 1224px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container__content__text {
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    align-content: center;
+    gap: 1rem;
+  }
+  
+  .container__content__image {
+    position: relative;
+  
+    border-radius: 20px;
+    background: #fef7eb;
+    padding: 6rem;
+    max-width: 100%;
+    height: 894px;
+  }

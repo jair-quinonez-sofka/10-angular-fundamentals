@@ -2,23 +2,8 @@
 @use '../../ui/styles/mixins.scss' as mixins;
 
 .menu {
-  @include mixins.container-gap(40px);
+  @include mixins.container-gap(20px);
   list-style: none;
-
-  &__item {
-    font-weight: 600;
-  }
-  
-  &__item, &__icon {
-    @include mixins.container-gap(3px);
-  }
-  
-  &__icon {
-    color: variables.$gray;
-  }
-  
-  &__link {
-    color: #000;
-    text-decoration: none;
-  }
 }
+
+

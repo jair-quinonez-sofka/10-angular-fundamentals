@@ -1,0 +1,33 @@
+.footer {
+    background-color: #09101c;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 2rem 1rem;
+  
+    &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    &__columns {
+      border-top: 1px  dashed #1b263c;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 100%;
+  }
+  }
+  .hero__actions {
+    display: flex;
+    gap: 2rem;
+    border: 2px dotted  #1b273d;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 5px;
+    
+  }

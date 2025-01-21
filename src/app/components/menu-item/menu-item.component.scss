@@ -1,0 +1,46 @@
+.menu__item{
+  
+    position:relative;
+  
+    
+    &:hover .submenu {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.3s ease, visibility 0s 0s;
+    }
+  
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      i {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        
+      }
+    }
+  }
+  
+  .menu__item button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 5px;
+    cursor: pointer;
+  
+    
+  }
+  
+  .menu__item button span {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.5s ease;
+  }
+  
+  .menu__item button:hover span {
+    opacity: 0.5;
+  }

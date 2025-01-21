@@ -1,0 +1,9 @@
+.container__content__built {
+    max-width: 1224px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding-bottom: 8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }

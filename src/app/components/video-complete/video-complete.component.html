@@ -1,10 +1,28 @@
-<div class="video__place">
-    <video muted autoplay loop src="/assets/videos/Wallet_01.webm"></video>
-    <div class="text__place">
-      <h2>Own your crypto</h2>
-      <span>
-        No one can freeze, lock out or stop you from accessing or
-        transacting your tokens.
-      </span>
-    </div>
+@if(isHalf()){
+<div class="container__content__keycard">
+  <div class="video__place__built">
+    <video muted autoplay loop src="/assets/videos/Keycard_01.webm"></video>
   </div>
+  <div class="keycard__text">
+    <h2>Use Status with Keycard</h2>
+    <p class="simple__text">A secure contactless hardware wallet.</p>
+    <button tabindex="4" class="action__button action__button--outlined" (click)="handleClickL()">
+      Learn More
+    </button>
+  </div>
+</div>
+
+
+
+} @else {
+<div class="video__place">
+  <video muted autoplay loop src="/assets/videos/Wallet_01.webm"></video>
+  <div class="text__place">
+    <h2>Own your crypto</h2>
+    <span>
+      No one can freeze, lock out or stop you from accessing or
+      transacting your tokens.
+    </span>
+  </div>
+</div>
+}

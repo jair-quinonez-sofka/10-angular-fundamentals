@@ -1,0 +1,19 @@
+<div class="footer__column">
+    @if(isFirst()){
+        <div class="footer__logo--inside">
+          <img src="/assets/images/Us_2.webp" alt="Status Logo" />
+          <span>Status</span>
+      </div>
+    }
+    <h4>{{title()}}</h4>
+      @if(links()){
+      <ul>
+          @for (link of links(); track $index) {
+              <li>
+                  <a href="{{link.href}}">{{link.label}}</a>
+              </li>
+          }
+  
+      </ul>
+      }
+  </div>

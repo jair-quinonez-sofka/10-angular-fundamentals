@@ -1,0 +1,29 @@
+.footer__bottom {
+    margin-top: 2rem;
+    text-align: left;
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 0.8rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+      justify-content: left;
+
+      li {
+        a {
+          color: #ffffffb3;
+          text-decoration: none;
+          font-size: 0.8rem;
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }

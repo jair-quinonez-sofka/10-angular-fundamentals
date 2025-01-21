@@ -1,33 +1,58 @@
-@use '../../ui/styles/variables.scss' as variables;
-@use '../../ui/styles/mixins.scss' as mixins;
-
 .header {
-  @include mixins.container(space-between);
-  padding: 25px;
-  width: 1368px;
-  position: fixed;
+  position: initial;
   top: 0;
-  left: 50%;
-  translate: -50%;
+  left: 0;
+  width: 100%;
+  z-index: 25;
+  background-color: rgb(9, 16, 28); 
+  backdrop-filter: blur(10px); 
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
 
-  &__actions {
-    @include mixins.container-gap(30px);
-  }
+
+
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
   
-  &__link {
-    color: #000;
-    text-decoration: none;
-    font-weight: 600;
-  }
+}
+
+.header.shrink {
+  width: 80%; 
+  left: 10%;
+  top: 5%; 
+  padding: 5px 10px; 
+  border-radius: 16px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+.header.hide {
+  transform: translateY(-100%); 
+  opacity: 0; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar-logo img {
+  max-height: 50px; 
+  transition: max-height 0.3s ease-in-out; 
+}
+
+.header.shrink .navbar-logo img {
+  max-height: 35px; 
+}
+
+
+
+.header__actions{
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 40px;
   
-  &__button {
-    color: #FFF;
-    background-color: #000;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 17px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-  }
+  
 }

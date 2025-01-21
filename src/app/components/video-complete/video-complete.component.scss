@@ -35,3 +35,85 @@
         font-weight: 300;
     }
 }
+
+.video__place__built {
+  position: relative;
+
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  left: -13rem;
+
+  video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.keycard__text {
+  max-width: 40%;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  align-content: center;
+  gap: 1rem;
+
+  h2 {
+    font-size: 70px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 19px;
+    font-weight: 400;
+    padding-top: 1rem;
+  }
+
+  .action__button {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.3rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-block: 0.5rem;
+
+    &__icon {
+      margin-right: 0.75rem;
+      width: 20px;
+      height: 20px;
+    }
+
+    &--outlined {
+      background-color: transparent;
+      border: 1px solid #dce0e5;
+      color: #000;
+
+      &:hover {
+        background-color: gray;
+      }
+    }
+
+    &--filled {
+      background-color: #223bc4;
+      color: white;
+      border: 1px solid #223bc4;
+
+      &:hover {
+        background-color: #0407aa;
+      }
+    }
+  }
+}
+
+.container__content__keycard {
+  max-width: 1224px;
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}

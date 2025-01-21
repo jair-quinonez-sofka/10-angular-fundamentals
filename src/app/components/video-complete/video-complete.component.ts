@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-video-complete',
@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './video-complete.component.scss'
 })
 export class VideoCompleteComponent {
+
+  isHalf = input<boolean>();
+  public clickLearnMore = output<string>();
+
+
+   public handleClickL(){
+    this.clickLearnMore.emit("Is Clicking Learn More")
+  }
 
 }

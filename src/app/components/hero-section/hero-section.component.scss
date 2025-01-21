@@ -1,0 +1,84 @@
+
+@use '../../ui/styles/mixins.scss' as mixins;
+
+
+.hero {
+    display: flex;
+    position: relative;
+    background-color: #09101c;
+    align-items: center;
+  
+    &__data {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    &__title {
+      @include mixins.container-gap(0px);
+      justify-content: center;
+      color: white;
+      font-size: 80px;
+      font-weight: 800;
+      line-height: 0.75;
+      text-wrap: balance;
+      text-align: center;
+    }
+  
+    &__badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #161c28;
+      backdrop-filter: blur(10px);
+      color: white;
+      border-radius: 50px;
+      border-color: #ffffff1a;
+      padding: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      text-decoration: none;
+      border: solid 1px #ffffff1a;
+      max-width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 20px;
+  
+      a {
+        color: white;
+        text-decoration: none;
+        background: linear-gradient(
+          89deg,
+          rgb(246, 176, 60) 25.05%,
+          rgb(255, 51, 163) 84.36%
+        );
+        border-radius: 50px;
+        padding: 2px 5px;
+      }
+    }
+  
+    &__description {
+      @include mixins.container-gap(0px);
+      margin-top: 20px;
+  
+      justify-content: center;
+      color: white;
+      font-size: 27px;
+      font-weight: 400;
+      line-height: 1.5;
+      text-wrap: balance;
+      text-align: center;
+    }
+  }
+  
+  .hero__actions {
+    display: flex;
+    gap: 2rem;
+    border: 2px dotted  #1b273d;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 5px;
+    
+  }
+  
